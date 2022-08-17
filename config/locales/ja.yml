@@ -6,4 +6,6 @@ ja:
         password: "パスワード"
         password_confirmation: "パスワード確認"
         email: "メールアドレス"
+      list:
+        title: "リスト名"
         
