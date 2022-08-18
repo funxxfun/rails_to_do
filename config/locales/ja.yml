@@ -8,4 +8,7 @@ ja:
         email: "メールアドレス"
       list:
         title: "リスト名"
+      card:
+        title: "カード名"
+        memo: "メモ"
         

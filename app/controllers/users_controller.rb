@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   
-  before_action :set_list, only: %i(show edit update)
+  before_action :set_user, only: %i(show edit update)
   
   def show
   end
@@ -16,16 +16,17 @@ class UsersController < ApplicationController
     end
   end
   
-end
-
-
-
-private
-
-  def user_params
-    params.require(:user).permit(:name )
-  end
   
-  def set_list
-      @user = User.find(params[:id])
-  end
+
+
+  private
+  
+    def user_params
+      params.require(:user).permit(:name )
+    end
+    
+    def set_user
+        @user = User.find(params[:id])
+    end
+    
+end
